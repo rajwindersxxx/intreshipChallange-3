@@ -16,7 +16,7 @@ function RadioButton({ label, onChange, name, ...props }: props) {
           name={name}
           {...props}
         />
-        <div className="h-5 w-5 border-2 border-white ring-2 ring-primary rounded-full peer-checked:bg-primary transition-colors" />
+        <div className="h-5 w-5 border-4 border-white ring-2 ring-primary rounded-full peer-checked:bg-primary transition-colors" />
         <span>{label}</span>
       </label>
     </div>

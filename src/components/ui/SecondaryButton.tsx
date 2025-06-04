@@ -12,7 +12,7 @@ function SecondaryButton({
   children,
   onClick,
   onSubmit,
-  disabled,
+  disabled ,
   type = "button",
   ...props
 }: props) {
@@ -20,7 +20,8 @@ function SecondaryButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className="bg-secondary transition-colors  disabled:bg-accent  px-4 py-2 rounded-md"
+      className="bg-secondary transition-colors  disabled:bg-accent  px-4 py-2 rounded-md hover:opacity-90 disabled:cursor-not-allowed
+"
       type={type}
       onSubmit={onSubmit}
       {...props}

@@ -12,7 +12,7 @@ function DangerButton({ children, onClick, disabled, className }: props) {
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`bg-important  disabled:bg-accent px-4 py-2 rounded-md text-white ${className}`}
+      className={`bg-important  disabled:bg-accent px-4 py-2 rounded-md text-white  hover:opacity-90 ${className}`}
     >
       {children}
     </button>

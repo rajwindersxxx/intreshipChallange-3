@@ -9,6 +9,7 @@ function SignIn() {
   const [email, setEmail] = useState("");
   const isDisable = password.length === 0 || email.length === 0;
   const navigate = useNavigate();
+
   return (
     <div className="flex flex-col gap-4 py-8 px-4 h-full ">
       <Heading>Signin to your PopX account</Heading>
@@ -17,7 +18,10 @@ function SignIn() {
       </Heading>
       <form
         className="flex flex-col gap-6"
-        onSubmit={() => navigate("/account")}
+        onSubmit={(e) => {
+          e.preventDefault();
+          navigate("/account");
+        }}
       >
         <TextInput
           label="Email Address"
