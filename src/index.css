@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #1d2226;
+  --color-primary: #6c25ff;
+  --color-secondary: #6c25ff4b;
+  --color-accent: #cbcbcb;
+  --color-gray: #f7f8f9;
+  --color-important: #dd4a3d;
+  --font-rubick: "Quicksand", "sans-serif";
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px var(--color-gray) inset !important;
+  -webkit-text-fill-color: #000 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px var(--color-gray) inset !important;
+}
